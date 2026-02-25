@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
+
+/* NAVIGATION BAR */
+
+/* Nav Bar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #61A0AF;
+  display: flex;
+  justify-content: right;
+  padding: 30px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  transition: background 0.3s ease, padding 0.3s ease;
+}
+
+/* Navbar links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 25px;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.2s ease;
+  position: relative;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #F9B9B7;
+}
+
+/* Scroll effect */
+.nav-link.active::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #F5D491;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+/* Active color */
+.nav-link.active {
+  color: #F5D491;
+  border-bottom: 2px solid #96C9DC;
+}
+
+/* Active hover color */
+.nav-link.active:hover {
+  color: #F9B9B7;
+  border-bottom: 2px solid #96C9DC;
+}
+
+/* Change the underline bar color on hover */
+.nav-link.active:hover::after {
+  background-color: #F9B9B7;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* HOME PAGE STYLING */
+
+.home {
+    position: relative;
+    display: inline-block;
+}
+
+.home-background {
+    object-fit: cover;
+    width: 100vw;
+    display: block;
+    height: 100vh;
+}
+
+.overlay-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #619faf63;
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/* SWIPING PAGE */
+
+.swiping {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
+}
+
+
+/* RESULTS PAGE */
+
+.results {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
+    background-color: #96C9DC;
+}
+
+
+/* ABOUT PAGE */
+
+.about {
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    text-align: center;
+    background-color: #F5D491;
+}
