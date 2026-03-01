@@ -115,6 +115,9 @@ function reset() {
     catCountEl.textContent = catCount;
     dogCountEl.textContent = dogCount;
 
+    dogRatioEl.textContent = "0%";
+    catRatioEl.textContent = "0%";
+
     pieChart.style.background = `conic-gradient(#F5D491 0% 50%, #e47874 50% 100%)`;
 }
 
