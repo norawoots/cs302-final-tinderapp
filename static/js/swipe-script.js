@@ -22,7 +22,8 @@ const dogs = [
   "/static/img/dog4.jpg",
   "/static/img/dog5.jpeg",
   "/static/img/dog6.jpg",
-  "/static/img/dog7.jpeg"
+  "/static/img/dog7.jpeg",
+  "/static/img/dog8.jpeg"
 ];
 
 // Gets the HTML elements card and swipeButton to use them in the JS
@@ -114,6 +115,9 @@ function reset() {
 
     catCountEl.textContent = catCount;
     dogCountEl.textContent = dogCount;
+
+    dogRatioEl.textContent = "0%";
+    catRatioEl.textContent = "0%";
 
     pieChart.style.background = `conic-gradient(#F5D491 0% 50%, #e47874 50% 100%)`;
 }
