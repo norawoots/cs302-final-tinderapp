@@ -22,7 +22,8 @@ const dogs = [
   "/static/img/dog4.jpg",
   "/static/img/dog5.jpeg",
   "/static/img/dog6.jpg",
-  "/static/img/dog7.jpeg"
+  "/static/img/dog7.jpeg",
+  "/static/img/dog8.jpeg"
 ];
 
 // Gets the HTML elements card and swipeButton to use them in the JS
